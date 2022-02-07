@@ -68,3 +68,21 @@ else console.log('title no tiene la clase main-title')*/
 //console.log(names.value)
 
 //...........................eventos:
+const button= document.getElementById('button')
+
+const box= document.getElementById('box')
+
+/*button.addEventListener('click', () =>{
+    console.log('hiciste un CLICK')
+})*/
+
+/*button.addEventListener('dblclick', ()=>{
+    console.log('hiciste un doble')
+})*/
+
+box.addEventListener('mouseenter',()=>{
+    box.style.background="green"
+})
+box.addEventListener('mouseleave',()=>{
+    box.style.background="red"
+})

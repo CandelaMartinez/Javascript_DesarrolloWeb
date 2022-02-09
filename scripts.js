@@ -67,7 +67,7 @@ else console.log('title no tiene la clase main-title')*/
 //...........................imprimo el valor de value del elemento name
 //console.log(names.value)
 
-//...........................eventos:
+//...........................eventos de raton:
 const button= document.getElementById('button')
 
 const box= document.getElementById('box')
@@ -80,9 +80,46 @@ const box= document.getElementById('box')
     console.log('hiciste un doble')
 })*/
 
-box.addEventListener('mouseenter',()=>{
+//............no es la forma correcta de cambiar de color, se hace por clases
+/*box.addEventListener('mouseenter',()=>{
     box.style.background="green"
 })
 box.addEventListener('mouseleave',()=>{
     box.style.background="red"
+})*/
+
+//............esta es la forma correcta, se crean las clases en css primero
+/*box.addEventListener('mouseenter',()=>{
+    box.classList.replace('red','green')
+})
+box.addEventListener('mouseleave',()=>{
+    box.classList.replace('green','red')
+})
+
+box.addEventListener('mousedown', () => {
+    console.log('haz pulsado en el box')
+})
+
+box.addEventListener('mouseup', () => {
+    console.log('haz soltado en el box')
+})
+
+box.addEventListener('mousemove', () => {
+    console.log('haz movido en el box')
+})
+*/
+//...........................eventos de teclado
+const inputed= document.getElementById('inputed')
+console.log(inputed)
+
+inputed.addEventListener('keydown', ()=>{
+    console.log('has pulsado una tecla')
+})
+
+inputed.addEventListener('keyup', ()=>{
+    console.log('has soltado una tecla')
+})
+
+inputed.addEventListener('keypress', ()=>{
+    console.log('estas pulsando una tecla')
 })
